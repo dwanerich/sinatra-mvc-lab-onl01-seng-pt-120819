@@ -11,7 +11,7 @@ class App < Sinatra::Base
     word = PigLatinizer.new
     @pig_latinized_word = word.piglatinize(user_word)
     
-    erb :pig_latin
+    direct to ':pig_latin'
   end
   
 end
